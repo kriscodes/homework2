@@ -6,88 +6,155 @@
         -->
         <style>
             ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: white;
-}
-
-li {
-    float: left;
-}
-
-li a:hover:not(.active) {
-    background-color: #111;
-}
-
-.active {
-    background-color: #04AA6D;
-}
-
-.nav-logo {
-    margin-left: 12%;
-    padding: 8px 16px;
-    font-size: 24px;
-    color: #2196F3;
-    text-decoration: none;
-}
-
-.nav-studio-link {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 14px;
-    padding-left: 93px;
-}
-
-.nav-links {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 14px;
-    padding-left: 44px;
-}
-
-.top-container{
-    width: 90%;
-    height: 520px;
-    background-color: gray;
-}
-
-.top-container-text {
-    text-align: center;
-}
-
-.nav-right {
-    float: right;
-    padding-right: 12px;
-}
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: white;
+            }
+            li {
+                float: left;
+            }
+            .active {
+                background-color: #04AA6D;
+            }
+            .nav-logo-text { 
+                color: #2196F3;
+                text-decoration: none;
+                margin-left: 128px;
+                font-size: 24px;
+            }
+            .nav-studio-link {
+                display: block;
+                text-align: center;
+                padding: 8px;
+                font-size: 14px;
+                padding-left: 93px;
+            }
+            .nav-links {
+                display: block;
+                text-align: center;
+                padding: 8px;
+                font-size: 14px;
+                padding-left: 44px;
+            }
+            .nav-text:hover{
+                color: #2196F3;
+                background-color: white;
+            }
+            .nav-text {
+                color: black;
+                text-decoration: none;
+            }
+            .nav-links-list {
+                padding-top: 18px;
+            }
+            .nav-line {
+                border: 1px solid #ececec;
+                padding: 0 12px;
+            }
+            .top-container{
+                margin-top: 40px;
+                width: 100%;
+                height: 600px;
+                background-color: #2F303A;
+            }
+            .top-container-content{
+                display: flex;
+                height: 100%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .top-container-text {
+                text-align: center;
+                color: white;
+            }
+            .top-container-button {
+                background-color: #2196F3;
+                width: 200px;
+                height: 50px;
+                color: white;
+                border: none;
+                border-radius: 4px;
+            }
+            .nav-right {
+                float: right;
+                padding-right: 12px;
+            }
+            body {
+                margin: 0;
+            }
         </style>
     </head>
     <body>
         <header style="text-decoration: underline;">
             <nav>
-                <ul>
-                    <li class="nav-logo"><a class="" href="/">WebStudio</a></li>
-                    <li class="nav-studio-link"><a href="#studio">Studio</a></li>
-                    <li class="nav-links"><a href="#news">Portfolio</a></li>
-                    <li class="nav-links"><a href="#about">Contacts</a></li>
-                    <li class="nav-links nav-right"><a class="" href="#about">+ 1 212-772-4150</a></li>
-                    <li class="nav-links nav-right"><a class="" href="#about">info@devstudio.com</a></li>
+                <ul class="nav-links-list">
+                    <li>
+                        <a class="nav-logo-text" href="/">
+                            WebStudio
+                        </a>
+                    </li>
+                    <li class="nav-studio-link">
+                        <a class="nav-text" href="#studio">
+                            Studio
+                        </a>
+                    </li>
+                    <li class="nav-links">
+                        <a class="nav-text" href="#news">
+                            Portfolio
+                        </a>
+                    </li>
+                    <li class="nav-links">
+                        <a class="nav-text" href="#about">
+                            Contacts
+                        </a>
+                    </li>
+                    <li class="nav-links nav-right">
+                        <a class="nav-text" href="#about">
+                            + 1 212-772-4150
+                        </a>
+                    </li>
+                    <li class="nav-links nav-right">
+                        <a class="nav-text" href="#about">
+                            info@devstudio.com
+                        </a>
+                    </li>
                 </ul>
             </nav>
+            <div style="margin: 0 12px">
+                <hr class="nav-line" />
+            </div>
         </header>
         <main>
             <div class="top-container">
-            <h1 class="top-container-text">Hello World</h1>
-        </div>
+                <div class="top-container-content">
+                    <h1 class="top-container-text">EFFECTIVE SOLUTIONS FOR <br/> YOUR BUSINESS</h1>
+                    <button class="top-container-button">Request our service</button>
+                </div>
+            </div>
+            <div style="display: flex; margin: 16px 64px;">
+                <div>
+                    <h3>ATTENTION TO DETAILS</h3>
+                    <p>We go into all the details and processes of your business to develop customized solutions.</p>
+                </div>
+                <div>
+                    <h3>PUNCTUALITY</h3>
+                    <p>With us, you can feel sage and secure. An important principle of the company: respect your time and respect the agreed deadlines.</p>
+                </div>
+                <div>
+                    <h3>PLANNING</h3>
+                    <p>You will be able to observe and participate in every phase of solution development and implementation.</p>
+                </div>
+                <div>
+                    <h3>MODERN TECHNOLOGIES</h3>
+                    <p>We use innovative tools to solve assigned tasks. It's time to simplify work processes.</p>
+                </div>
+            </div>
         </main>
         <footer>
+            <!--
             <nav>
                 <ul>
                     <li>WebStudio</li>
@@ -97,6 +164,7 @@ li a:hover:not(.active) {
                     <li style="float:right"><a class="active" href="#about">About</a></li>
                 </ul>
             </nav>
+            -->
         </footer>
     </body>
 </html>
