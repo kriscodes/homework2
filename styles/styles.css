@@ -101,6 +101,7 @@ li {
 }
 body {
     margin: 0;
+    height: 100%;
 }
 .title{
     font-size: 36px;
@@ -153,4 +154,35 @@ body {
     color: rgba(255, 255, 255, 0.6); 
     line-height: 24px; 
     font-style: normal;
+}
+.product-card-container {
+    width: 370px;
+    height: 404px;
+    border: 1px solid #EEEEEE;
+}
+.product-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    margin: 0;
+}
+.product-description{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 0;
+}
+.product-text-container {
+    padding: 20px 24px;
+}
+.product-buttons {
+    background-color: #F5F4FA;
+    padding: 6px 26px;
+    border: none;
+    height: 38px; 
+    border-radius: 4px;
+}
+.active-product-button {
+    background-color: #2196F3;
+    color: white;
 }
